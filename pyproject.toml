@@ -1,0 +1,27 @@
+[project]
+name = "futures-assignment"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "daefigueroa"},
+]
+dependencies = [
+    "numpy>=2.0.1",
+    "pandas>=2.2.2",
+    "pip>=24.2",
+    "matplotlib>=3.9.0",
+    "pyarrow>=17.0.0",
+    "fastparquet==2024.2.0",
+    "jupyterlab>=4.2.4",
+    "jupytext>=1.16.4",
+    "plotly>=5.23.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.resolution]
+only-binary = [":all:"]
