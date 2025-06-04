@@ -8,6 +8,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.offline as pyo
 
+import plotly.io as pio
+pio.renderers.default = "notebook_connected"
+
 pyo.init_notebook_mode()
 
 
